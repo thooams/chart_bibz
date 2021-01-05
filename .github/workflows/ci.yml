@@ -1,4 +1,4 @@
-name: Ruby
+name: CI
 
 on: [push]
 
@@ -8,14 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Setup System
-      run: |
-        sudo apt-get install libsqlite3-dev
-    - name: Set up Ruby 3.0
+    - uses: actions/checkout@v2
+
+    - name: Set up Ruby with .ruby-version file
       uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 3.0.x
+
     - name: Build and test with Rake
       run: |
         gem install bundler
