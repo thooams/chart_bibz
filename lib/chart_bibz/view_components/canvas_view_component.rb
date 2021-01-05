@@ -12,10 +12,12 @@ module ChartBibz
         @args = args
       end
 
+      # Generate the html canvas
       def render
         tag.canvas(**html_options)
       end
 
+      # Get the html id
       def id
         html_options[:id]
       end
