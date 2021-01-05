@@ -3,7 +3,6 @@
 module ChartBibz
   module ViewComponents
     class CanvasViewComponent < ApplicationViewComponent
-
       # Constants
       WIDTH = 400
       HEIGHT = 400
