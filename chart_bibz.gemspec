@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.version     = ChartBibz::VERSION
   spec.authors     = ["Thomas HUMMEL"]
   spec.email       = ["thomas@hummel.link"]
-  spec.homepage    = "TODO"
+  spec.homepage    = "https://github.com/thooams/chart_bibz"
   spec.summary     = "ChartJs with ruby."
   spec.description = "ChartJs with ruby."
   spec.license     = "MIT"

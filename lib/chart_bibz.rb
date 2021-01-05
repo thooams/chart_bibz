@@ -1,5 +1,7 @@
 require "chart_bibz/railtie"
 
 module ChartBibz
-  # Your code goes here...
+  extend ActiveSupport::Autoload
+
+  autoload :ViewComponents
 end
