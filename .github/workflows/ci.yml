@@ -12,6 +12,8 @@ jobs:
 
     - name: Set up Ruby with .ruby-version file
       uses: actions/setup-ruby@v1
+      with:
+        ruby-version: >= 3.0.x
 
     - name: Install Gems
       run: |
