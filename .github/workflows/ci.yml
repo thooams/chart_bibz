@@ -12,14 +12,9 @@ jobs:
 
     - name: Set up Ruby with .ruby-version file
       uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 3.0.x
 
-    - name: Install Gems
+    - name: Build and test with Rake
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
-
-    - name: Test with Rake
-      run: |
         bundle exec rake
