@@ -1,0 +1,4 @@
+# Classes
+module ChartBibz
+  VERSION: String
+end

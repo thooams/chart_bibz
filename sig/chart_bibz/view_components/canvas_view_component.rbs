@@ -1,0 +1,23 @@
+# Classes
+module ChartBibz
+  module ViewComponents
+    class CanvasViewComponent
+
+      WIDTH: Integer
+      HEIGHT: Integer
+
+      @args: Hash[bot, bot]
+      @html_options: Hash
+
+      def initialize: (?::Hash[Symbol, untyped] args) -> void
+
+      def render: -> String
+
+      def id: -> String
+
+      private
+
+      def html_options: -> Hash
+    end
+  end
+end

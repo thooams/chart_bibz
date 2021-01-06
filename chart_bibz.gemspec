@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.summary     = 'ChartJs with ruby.'
   spec.description = 'ChartJs with ruby.'
   spec.license     = 'MIT'
+  spec.required_ruby_version = '>= 2.7.0'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -34,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-minitest'
   spec.add_development_dependency 'rubocop-performance'
   spec.add_development_dependency 'rubocop-rails'
+  spec.add_development_dependency 'steep'
 end
