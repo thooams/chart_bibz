@@ -12,6 +12,7 @@ jobs:
 
     - name: Set up Ruby with .ruby-version file
       uses: ruby/setup-ruby@v1
+      with:
         bundler-cache: true
 
     - name: Build and test with Rake
