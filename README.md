@@ -4,7 +4,7 @@
 Use Chartjs with ruby. Generate your chart in one ruby line.
 
 ## Usage
-How to use my plugin.
+How to use the plugin.
 ```ruby
 data = {
   datasets: [{
@@ -15,7 +15,9 @@ data = {
     data: [10, 20, 30, 40, 50, 60, 70]
   }]
 }
-chart type: :bar, id: "my-chart", data: data
+chart data: data
+# or
+chart type: :bar, id: "my-chart", data: data, width: 100, height: 520
 ```
 
 ## Installation
@@ -28,11 +30,19 @@ gem 'chart_bibz'
 And then execute:
 ```bash
 $ bundle
+$ yarn add chart.js
 ```
 
 Or install it yourself as:
 ```bash
 $ gem install chart_bibz
+```
+
+Add this js in your javascript/packs/application.js
+```js
+...
+require("chart-bibz").start()
+...
 ```
 
 ## Contributing

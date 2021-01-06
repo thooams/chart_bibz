@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# Code climate
+require 'simplecov'
+SimpleCov.start 'rails'
+
 # Configure Rails Environment
 ENV['RAILS_ENV'] = 'test'
 

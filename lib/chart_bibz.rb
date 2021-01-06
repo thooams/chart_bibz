@@ -6,4 +6,5 @@ module ChartBibz
   extend ActiveSupport::Autoload
 
   autoload :ViewComponents
+  autoload :Helpers
 end

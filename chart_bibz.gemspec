@@ -28,12 +28,13 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  spec.add_dependency 'rails', '~> 6.0.3', '>= 6.0.3.4'
+  spec.add_development_dependency 'rails', '~> 6.0.3', '>= 6.0.3.4'
   spec.add_development_dependency 'overcommit'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-ast'
   spec.add_development_dependency 'rubocop-minitest'
   spec.add_development_dependency 'rubocop-performance'
   spec.add_development_dependency 'rubocop-rails'
+  spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'steep'
 end
