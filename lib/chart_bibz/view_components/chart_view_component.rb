@@ -2,6 +2,7 @@
 
 module ChartBibz
   module ViewComponents
+    # Generate the chart view through the render method
     class ChartViewComponent < ApplicationViewComponent
       # Constants
 

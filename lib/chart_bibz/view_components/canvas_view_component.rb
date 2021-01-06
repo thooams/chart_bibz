@@ -2,6 +2,7 @@
 
 module ChartBibz
   module ViewComponents
+    # Generate the canvas view through the render method
     class CanvasViewComponent < ApplicationViewComponent
       # Constants
       WIDTH = 400
@@ -24,7 +25,9 @@ module ChartBibz
       private
 
       def html_options
-        @html_options ||= { id: "chart-#{Random.uuid}", width: WIDTH, height: HEIGHT }.merge(@args)
+        @html_options ||= { id: "chart-#{Random.uuid}", width: WIDTH, height: HEIGHT }
+          .merge(@args)
+          .merge(class: join_classes("chart-bibz", @args[:class]))
       end
     end
   end
