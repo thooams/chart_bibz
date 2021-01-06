@@ -1,3 +1,5 @@
+![Chart Bibz logo](https://raw.githubusercontent.com/thooams/chart_bibz/main/chart-bibz-logo.gif)
+
 # ChartBibz
 Use Chartjs with ruby. Generate your chart in one ruby line.
 
