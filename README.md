@@ -3,10 +3,14 @@
 # Chart Bibz
 Use Chartjs with ruby. Generate your chart in one ruby line.
 
+[![Gem Version](https://badge.fury.io/rb/chart_bibz.svg)](https://badge.fury.io/rb/chart_bibz)
 [![Build Status](https://github.com/thooams/ui-bibz/workflows/CI/badge.svg)](https://github.com/thooams/ui-bibz/workflows/CI/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7e8e319e9f7197593733/maintainability)](https://codeclimate.com/github/thooams/chart_bibz/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7e8e319e9f7197593733/test_coverage)](https://codeclimate.com/github/thooams/chart_bibz/test_coverage)
 [![security](https://hakiri.io/github/thooams/chart_bibz/main.svg)](https://hakiri.io/github/thooams/chart_bibz/main)
+[![Ci](https://github.com/thooams/chart_bibz/workflows/CI/badge.svg)](https://github.com/thooams/chart_bibz/actions)
+[![Inline docs](http://inch-ci.org/github/thooams/chart_bibz.svg?branch=master)](http://inch-ci.org/github/thooams/chart_bibz)
+
 
 ## Usage
 How to use the plugin.
