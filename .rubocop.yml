@@ -40,3 +40,7 @@ Style/SwapValues: # (new in 1.1)
   Enabled: true
 Lint/MissingSuper:
   Enabled: false
+Layout/LineLength:
+  Enabled: true
+  Exclude:
+    - 'test/**/**/**/**/*'

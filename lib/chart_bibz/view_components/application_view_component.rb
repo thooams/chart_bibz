@@ -2,7 +2,7 @@
 
 module ChartBibz
   module ViewComponents
-    class ApplicationViewComponent
+    class ApplicationViewComponent # rubocop:disable Style/Documentation
       include ActionView::Helpers::TagHelper
       include ActionView::Helpers::CaptureHelper
       include ActionView::Helpers::TextHelper
