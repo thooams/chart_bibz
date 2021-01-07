@@ -12,10 +12,10 @@ Use Chartjs with ruby. Generate your chart in one ruby line.
 How to use the plugin.
 
 ```ruby
-@param data [Hash] Data
-@param options [Hash] The chart options
-@param html_options [Hash] The canvas html options
-@return [String] The Canvas Html
+# @param data [Hash] Data
+# @param options [Hash] The chart options
+# @param html_options [Hash] The canvas html options
+# @return [String] The Canvas Html
 chart data, options, html_options
 ```
 
