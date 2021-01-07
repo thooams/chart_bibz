@@ -13,7 +13,7 @@ How to use the plugin.
 
 ```ruby
 # @param data [Hash] Data
-# @param options [Hash] The chart options
+# @param options [Hash] The chart type and the chartjs options
 # @param html_options [Hash] The canvas html options
 # @return [String] The Canvas Html
 chart data, options, html_options
@@ -30,9 +30,11 @@ data = {
     data: [10, 20, 30, 40, 50, 60, 70]
   }]
 }
+options = { type: :bar, scales: { yAxes: [{ ticks: { beginAtZero: true } }] } }
+
 chart data
 # or
-chart data, { type: :bar }, { id: "my-chart", width: 100, height: 520 }
+chart data, options, { id: "my-chart", width: 100, height: 520 }
 ```
 
 ## Installation
@@ -59,9 +61,6 @@ Add this js in your javascript/packs/application.js
 require("chart-bibz").start()
 ...
 ```
-
-## Contributing
-Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
