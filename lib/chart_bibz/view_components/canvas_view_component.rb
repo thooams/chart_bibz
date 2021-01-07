@@ -30,8 +30,8 @@ module ChartBibz
       # @return [String] The canvas html attributes
       def html_options
         @html_options ||= { id: "chart-#{Random.uuid}", width: WIDTH, height: HEIGHT }
-          .merge(@args)
-          .merge(class: join_classes("chart-bibz", @args[:class]))
+                          .merge(@args)
+                          .merge(class: join_classes('chart-bibz', @args[:class]))
       end
     end
   end

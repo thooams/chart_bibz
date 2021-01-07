@@ -4,7 +4,6 @@ module ChartBibz
   module ViewComponents
     # Generate the chart view through the render method
     class ChartViewComponent < ApplicationViewComponent
-
       # @see CanvasViewComponent#id
       delegate :id, to: :canvas
 
@@ -38,9 +37,9 @@ module ChartBibz
 
       # @return [Hash] The new html options with the data attributes
       def new_html_options
-        @html_options["data-cb-data"] = @data.to_json
-        @html_options["data-cb-type"] = @options.delete(:type) || :bar
-        @html_options["data-cb-options"] = @options.to_json
+        @html_options['data-cb-data'] = @data.to_json
+        @html_options['data-cb-type'] = @options.delete(:type) || :bar
+        @html_options['data-cb-options'] = @options.to_json
         @html_options
       end
     end

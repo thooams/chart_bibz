@@ -12,7 +12,8 @@ class CanvasViewComponentTest < ActiveSupport::TestCase
   end
 
   test 'create a canvas with html_options' do
-    canvas_view_component = ChartBibz::ViewComponents::CanvasViewComponent.new(id: 'test', width: 100, height: 200, class: "test")
+    canvas_view_component = ChartBibz::ViewComponents::CanvasViewComponent.new(id: 'test', width: 100, height: 200,
+                                                                               class: 'test')
     actual = canvas_view_component.render
     expected = '<canvas id="test" width="100" height="200" class="chart-bibz test"></canvas>'
 
