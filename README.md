@@ -1,6 +1,6 @@
 ![Chart Bibz logo](https://raw.githubusercontent.com/thooams/chart_bibz/main/chart-bibz-logo.gif)
 
-# ChartBibz
+# Chart Bibz
 Use Chartjs with ruby. Generate your chart in one ruby line.
 
 [![Build Status](https://github.com/thooams/ui-bibz/workflows/CI/badge.svg)](https://github.com/thooams/ui-bibz/workflows/CI/badge.svg)
@@ -10,6 +10,16 @@ Use Chartjs with ruby. Generate your chart in one ruby line.
 
 ## Usage
 How to use the plugin.
+
+```ruby
+@param data [Hash] Data
+@param options [Hash] The chart options
+@param html_options [Hash] The canvas html options
+@return [String] The Canvas Html
+chart data, options, html_options
+```
+
+## Example
 ```ruby
 data = {
   datasets: [{
@@ -20,9 +30,9 @@ data = {
     data: [10, 20, 30, 40, 50, 60, 70]
   }]
 }
-chart data: data
+chart data
 # or
-chart type: :bar, id: "my-chart", data: data, width: 100, height: 520
+chart data, { type: :bar }, { id: "my-chart", width: 100, height: 520 }
 ```
 
 ## Installation
