@@ -59,12 +59,21 @@ Or install it yourself as:
 $ gem install chart_bibz
 ```
 
-Add this js in your javascript/packs/application.js
+Add this line in your js file, by example app/javascript/packs/application.js
 ```js
 ...
-require("chart-bibz").start()
+document.querySelectorAll(".chart-bibz").forEach(function(canvasEl){
+  let type = canvasEl.getAttribute("data-cb-type")
+  let options = JSON.parse(canvasEl.getAttribute("data-cb-options"))
+  let data = JSON.parse(canvasEl.getAttribute("data-cb-data"))
+  let ctx  = canvasEl.getContext('2d')
+
+  new Chart(ctx, { type: type, data: data, options: options })
+})
 ...
 ```
+
+That's it !
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
