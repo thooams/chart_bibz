@@ -33,7 +33,7 @@ module ChartBibz
       end
 
       def base_html_options
-        { id: "chart-#{Random.uuid}", width: WIDTH, height: HEIGHT, role: "img" }
+        { id: "chart-#{Random.uuid}", width: WIDTH, height: HEIGHT, role: 'img' }
       end
     end
   end

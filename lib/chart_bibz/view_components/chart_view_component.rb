@@ -23,9 +23,7 @@ module ChartBibz
       end
 
       # @return [String] The canvas html
-      def render
-        canvas.render
-      end
+      delegate :render, to: :canvas
 
       # @see CanvasViewComponent
       # @return [Object] The canvas object
@@ -45,7 +43,7 @@ module ChartBibz
       end
 
       def aria_label
-        @options[:title].nil? ? "Chart" : "Chart of #{@options[:title]}"
+        @options[:title].nil? ? 'Chart' : "Chart of #{@options[:title]}"
       end
     end
   end
