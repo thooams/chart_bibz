@@ -40,7 +40,12 @@ module ChartBibz
         @html_options['data-cb-data'] = @data.to_json
         @html_options['data-cb-type'] = @options.delete(:type) || :bar
         @html_options['data-cb-options'] = @options.to_json
+        @html_options['aria-label'] = aria_label
         @html_options
+      end
+
+      def aria_label
+        @options[:title].nil? ? "Chart" : "Chart of #{@options[:title]}"
       end
     end
   end

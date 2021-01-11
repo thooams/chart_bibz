@@ -8,3 +8,5 @@ module ChartBibz
   autoload :ViewComponents
   autoload :Helpers
 end
+
+require 'chart_bibz/rails/engine'
