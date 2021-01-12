@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# The Main Module
 module ChartBibz
-  VERSION = '0.1.0'
+  # The current version of Chart Bibz
+  VERSION = '0.1.1'
 end
