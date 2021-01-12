@@ -1,0 +1,24 @@
+name: Documentation Checker
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Ruby with .ruby-version file
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+
+    - name: Install gems
+      run: |
+        gem install inch
+
+    - name: Check documentation
+      run: |
+        bundle exec inch

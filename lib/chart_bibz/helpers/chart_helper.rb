@@ -2,7 +2,12 @@
 
 module ChartBibz
   module Helpers
-    module ChartHelper # rubocop:disable Style/Documentation
+    # Helper for chart bibz
+    module ChartHelper
+      # Generate the html of the canvas
+      #
+      # @see ChartBibz::ViewComponents::ChartViewComponent#initialize
+      # @return [String] HTML
       def chart(data = {}, options = {}, html_options = {})
         ChartBibz::ViewComponents::ChartViewComponent.new(data, options, html_options).render
       end

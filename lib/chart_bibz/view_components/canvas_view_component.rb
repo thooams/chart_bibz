@@ -8,13 +8,16 @@ module ChartBibz
       WIDTH = 400
       HEIGHT = 400
 
-      # @param args [Hash] The html options
+      # Only html_options can be passed
+      #
+      # @param [Hash] args The html options
       # @return [void]
       def initialize(args = {})
         @args = args
       end
 
       # Generate the html canvas
+      #
       # @return [String] The html canvas
       def render
         tag.canvas(**html_options)

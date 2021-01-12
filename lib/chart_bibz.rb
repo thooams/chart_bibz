@@ -2,6 +2,7 @@
 
 require 'chart_bibz/railtie'
 
+# The Main module for ChartBibz
 module ChartBibz
   extend ActiveSupport::Autoload
 
