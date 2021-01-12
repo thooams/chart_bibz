@@ -20,5 +20,4 @@ jobs:
         gem install inch
 
     - name: Check documentation
-      run: |
-        inch
+      run: inch
