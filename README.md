@@ -35,10 +35,11 @@ data = {
   }]
 }
 options = { type: :bar, scales: { yAxes: [{ ticks: { beginAtZero: true } }] } }
+html_options = { id: "my-chart", width: 100, height: 520 }
 
 chart data
 # or
-chart data, options, { id: "my-chart", width: 100, height: 520 }
+chart data, options, html_options
 ```
 
 ## Installation
