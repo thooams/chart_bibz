@@ -9,7 +9,7 @@ Use Chartjs with ruby. Generate your chart in one ruby line.
 [![security](https://hakiri.io/github/thooams/chart_bibz/main.svg)](https://hakiri.io/github/thooams/chart_bibz/main)
 [![Ci](https://github.com/thooams/chart_bibz/workflows/CI/badge.svg)](https://github.com/thooams/chart_bibz/actions)
 [![Linter](https://github.com/thooams/chart_bibz/workflows/Linter/badge.svg)](https://github.com/thooams/chart_bibz/actions)
-[![Inline docs](http://inch-ci.org/github/thooams/chart_bibz.svg?branch=master)](http://inch-ci.org/github/thooams/chart_bibz)
+[![Inline docs](http://inch-ci.org/github/thooams/chart_bibz.svg?branch=main)](http://inch-ci.org/github/thooams/chart_bibz)
 
 
 ## Usage
