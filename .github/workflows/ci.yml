@@ -23,6 +23,6 @@ jobs:
     - name: Test with Rake
       uses: paambaati/codeclimate-action@v2.7.5
       env:
-        CC_TEST_REPORTER_ID: 70da8a390df5ba119533529bea1459f61c24482d313df9e2088f32c9e66aaeba
+        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
         coverageCommand: bundle exec rake
